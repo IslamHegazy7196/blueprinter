@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
     def index
-        books = Book.all
+        books = Book.page(params[:page]).per(10)
         render json: BookSerializer.new(books).serialized_json
       end
     
