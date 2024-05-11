@@ -31,6 +31,11 @@
     <%= form.country_select :country, priority_countries: ['US', 'CA', 'GB'] %>
   </div>
 
+  <div class="field">
+    <%= form.label :release_date %>
+    <%= form.text_field :release_date, class: 'datepicker' %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

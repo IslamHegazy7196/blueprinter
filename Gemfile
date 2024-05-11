@@ -30,6 +30,7 @@ gem 'faker'
 gem 'kaminari'
 gem 'country_select'
 gem 'momentjs-rails'
+gem 'webpacker'
 
 
 # Use Redis adapter to run Action Cable in production
