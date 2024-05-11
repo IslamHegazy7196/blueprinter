@@ -8,11 +8,19 @@
 require 'faker'
 
 # Create 1000 books
-1000.times do
+100.times do
   Book.create(
     title: Faker::Book.title,
     author: Faker::Book.author
   )
 end
+100.times do
+    Product.create(
+      name: Faker::Commerce.product_name,
+      description: Faker::Lorem.sentence(word_count: 10),
+      price: Faker::Commerce.price(range: 0..1000.0, as_string: false)
+    )
+end
+  
 
 puts "Seed data created successfully"
